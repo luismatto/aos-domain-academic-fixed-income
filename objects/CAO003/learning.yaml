@@ -1,0 +1,42 @@
+learning:
+  id: LPKG-CAO003
+  title: Learning Package for Institutional Investment Process
+  capabilities:
+    - id: LC301
+      title: Explain the institutional investment process from mandate to monitoring
+      linked_competencies:
+        - PC301
+        - PC302
+    - id: LC302
+      title: Construct an IPS for a fixed income institutional portfolio
+      linked_competencies:
+        - PC301
+    - id: LC303
+      title: Map strategic and tactical decisions into portfolio implementation steps
+      linked_competencies:
+        - PC302
+    - id: LC304
+      title: Design monitoring and rebalancing rules for a fixed income mandate
+      linked_competencies:
+        - PC303
+  learning_units:
+    - id: LU003
+      title: Institutional Investment Process
+      duration: 4h
+      status: ready_for_compilation
+  required_assets:
+    - slides
+    - workshop
+    - instructor_guide
+    - student_guide
+    - exercises
+    - solutions
+    - rubric
+    - dgpi
+  assessment:
+    mode: investment_process_design
+    evidence:
+      - investment_policy_statement
+      - portfolio_process_map
+      - eligible_universe_definition
+      - monitoring_and_rebalancing_protocol

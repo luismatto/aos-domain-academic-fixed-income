@@ -1,6 +1,6 @@
-# MR-001 Migration
+# FI-DER-0005 Migration
 
-Copy the contents of `overlay/` into the repository root, replacing existing files.
+Apply the contents of `overlay/` over the root of `aos-domain-academic-fixed-income`, replacing files.
 
 Then run:
 
@@ -11,5 +11,5 @@ source("scripts/run_tests.R")
 Expected result:
 
 ```text
-FI-DER-0004-MR001 STATUS: PASS
+FI-DER-0005 STATUS: PASS
 ```

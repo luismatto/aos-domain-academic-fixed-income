@@ -1,0 +1,41 @@
+professional:
+  id: PPKG-CAO004
+  title: Professional Package for Time Value of Money
+  competencies:
+    - id: PC401
+      title: Convert cash flows across time using consistent interest rate conventions
+      observable_evidence: calculates present value future value and equivalent rates correctly
+    - id: PC402
+      title: Apply discount factors to value fixed income cash flows
+      observable_evidence: discounts dated cash flows using appropriate maturity and rate convention
+    - id: PC403
+      title: Interpret how compounding and day count conventions affect valuation
+      observable_evidence: explains price or value differences arising from convention choices
+  decisions:
+    - id: PD401
+      title: Select the appropriate rate convention for a valuation problem
+      criteria:
+        - compounding frequency
+        - horizon
+        - cash flow timing
+        - market convention
+        - instrument type
+    - id: PD402
+      title: Choose between single rate and curve based discounting
+      criteria:
+        - cash flow maturity distribution
+        - curve availability
+        - pricing precision required
+        - no arbitrage consistency
+    - id: PD403
+      title: Validate the financial equivalence of alternative cash flow streams
+      criteria:
+        - valuation date
+        - discount rate
+        - timing of cash flows
+        - compounding convention
+  professional_evidence:
+    - present_value_calculation
+    - future_value_calculation
+    - equivalent_rate_conversion
+    - discounted_cash_flow_table

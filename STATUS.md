@@ -1,5 +1,13 @@
-# MR-001 Status
+# FI-DER-0005 Validation Candidate
 
-MR-001 implements domain self-discovery and removes hard-coded CAO lists from validation, manifest and coverage scripts.
+Status: READY FOR EXTERNAL VALIDATION
 
-Status: VALIDATION CANDIDATE
+Expected validation:
+
+```text
+CAO001 validation: PASS
+CAO002 validation: PASS
+CAO003 validation: PASS
+CAO004 validation: PASS
+FI-DER-0005 STATUS: PASS
+```

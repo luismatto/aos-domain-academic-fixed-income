@@ -1,0 +1,15 @@
+knowledge_manifest:
+  object_id: CAO002
+  title: Institutional Types and Mandates
+  status: READY_FOR_COMPILATION
+  knowledge_units: 7
+  concepts_and_relation_items: 50
+  relations_items: 50
+  competencies: 3
+  professional_decisions: 3
+  learning_capabilities: 3
+  learning_units: 1
+  evidence_sources: 9
+  evidence_layer: complete
+  professional_layer: complete
+  learning_layer: complete

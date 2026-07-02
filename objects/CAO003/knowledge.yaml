@@ -1,0 +1,96 @@
+knowledge:
+  id: KPKG-CAO003
+  title: Institutional Investment Process Knowledge Package
+  coverage_target: complete
+  units:
+    - id: K301
+      title: Investment governance cycle
+      concepts:
+        - fiduciary governance
+        - investment committee
+        - delegation framework
+        - oversight process
+        - reporting cycle
+      relations:
+        - governance defines decision rights and accountability
+        - reporting links implementation to oversight
+    - id: K302
+      title: Investment Policy Statement
+      concepts:
+        - investment objective
+        - constraints
+        - eligible assets
+        - benchmark
+        - risk limits
+        - rebalancing rules
+      relations:
+        - IPS translates mandate into portfolio rules
+        - IPS anchors implementation and monitoring
+    - id: K303
+      title: Eligible investment universe
+      concepts:
+        - sovereign bonds
+        - central bank bills
+        - corporate bonds
+        - supranational bonds
+        - deposits
+        - money market instruments
+      relations:
+        - eligible universe is constrained by mandate and regulation
+        - eligible universe determines feasible portfolio construction
+    - id: K304
+      title: Strategic asset allocation
+      concepts:
+        - policy portfolio
+        - long term risk return tradeoff
+        - benchmark duration
+        - currency allocation
+        - credit allocation
+      relations:
+        - strategic allocation reflects long run objectives
+        - policy portfolio provides a reference for performance evaluation
+    - id: K305
+      title: Tactical asset allocation
+      concepts:
+        - active duration
+        - curve positioning
+        - sector rotation
+        - credit tilt
+        - liquidity positioning
+      relations:
+        - tactical allocation introduces controlled deviations from policy
+        - tactical positions must remain inside risk limits
+    - id: K306
+      title: Security selection and portfolio construction
+      concepts:
+        - yield
+        - duration
+        - convexity
+        - credit spread
+        - liquidity premium
+        - diversification
+      relations:
+        - security selection maps asset characteristics to portfolio objectives
+        - portfolio construction aggregates exposures under constraints
+    - id: K307
+      title: Implementation and execution
+      concepts:
+        - trade execution
+        - transaction cost
+        - settlement
+        - custody
+        - operational risk
+      relations:
+        - implementation quality affects realized performance
+        - operational controls reduce settlement and execution risk
+    - id: K308
+      title: Monitoring rebalancing and performance evaluation
+      concepts:
+        - drift
+        - rebalancing band
+        - performance attribution
+        - ex post risk
+        - compliance monitoring
+      relations:
+        - monitoring identifies deviations from mandate
+        - performance attribution explains sources of return

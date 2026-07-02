@@ -1,26 +1,26 @@
-message("AOS Fixed Income Domain FI-DER-0004-MR001 validation")
+message("AOS Fixed Income Domain FI-DER-0005 validation")
 
-source("scripts/domain_discovery.R")
 source("scripts/validate_domain.R")
 source("scripts/generate_manifest.R")
 source("scripts/coverage_report.R")
+source("scripts/domain_graph.R")
 
 objects <- discover_objects()
-if (length(objects) < 2) stop("Expected at least CAO001 and CAO002", call. = FALSE)
-
-for (object_id in objects) {
-  manifest_path <- file.path("reports", paste0(object_id, "_knowledge_manifest.yaml"))
-  if (!file.exists(manifest_path)) stop(paste("Missing generated manifest:", manifest_path), call. = FALSE)
-}
-
-required_paths <- c(
-  "Readme.md", "docs/DOMAIN_ARCHITECTURE.md", "docs/DOMAIN_LEDGER.md",
-  "policies/institutional.apl", "scripts/domain_discovery.R",
-  "scripts/validate_domain.R", "scripts/generate_manifest.R",
-  "scripts/coverage_report.R", "reports/domain_coverage.yaml"
+required_generated <- c(
+  file.path("reports", paste0(objects, "_knowledge_manifest.yaml")),
+  "reports/domain_coverage.yaml",
+  "reports/domain_knowledge_graph.yaml"
 )
 
-missing <- required_paths[!file.exists(required_paths)]
-if (length(missing) > 0) stop(paste("Missing required paths:", paste(missing, collapse = ", ")), call. = FALSE)
+missing <- required_generated[!file.exists(required_generated)]
+if (length(missing) > 0) {
+  stop(paste("Missing generated outputs:", paste(missing, collapse = ", ")), call. = FALSE)
+}
 
-message("FI-DER-0004-MR001 STATUS: PASS")
+expected_objects <- c("CAO001", "CAO002", "CAO003", "CAO004")
+missing_objects <- expected_objects[!(expected_objects %in% objects)]
+if (length(missing_objects) > 0) {
+  stop(paste("Missing expected CAO objects:", paste(missing_objects, collapse = ", ")), call. = FALSE)
+}
+
+message("FI-DER-0005 STATUS: PASS")

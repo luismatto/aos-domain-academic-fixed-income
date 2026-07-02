@@ -1,0 +1,19 @@
+id: CAO004
+title: Time Value of Money
+version: 1.0.0
+domain: fixed_income
+status: ready_for_compilation
+release: FI-DER-0005
+object_type: CanonicalAcademicObject
+canonical_layers:
+  - governance
+  - knowledge
+  - evidence
+  - professional
+  - learning
+dependencies:
+  - CAO001
+  - CAO002
+  - CAO003
+owners:
+  - academic_domain_fixed_income

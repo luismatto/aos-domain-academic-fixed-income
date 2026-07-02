@@ -1,0 +1,22 @@
+domain_coverage:
+  release: FI-DER-0005
+  discovered_objects: 4
+  complete_objects: 4
+  target_objects: 15
+  coverage_percent: 26.7
+  objects:
+    CAO001_Institutional_Investment_Ecosystem: COMPLETE
+    CAO002_Institutional_Types_and_Mandates: COMPLETE
+    CAO003_Institutional_Investment_Process: COMPLETE
+    CAO004_Time_Value_of_Money: COMPLETE
+    CAO005_Interest_Rates: NOT_STARTED
+    CAO006_Cash_Flows: NOT_STARTED
+    CAO007_Bond_Pricing: NOT_STARTED
+    CAO008_Yield_Measures: NOT_STARTED
+    CAO009_Term_Structure: NOT_STARTED
+    CAO010_Duration: NOT_STARTED
+    CAO011_Convexity: NOT_STARTED
+    CAO012_Immunization: NOT_STARTED
+    CAO013_Portfolio_Management: NOT_STARTED
+    CAO014_Risk_Measurement: NOT_STARTED
+    CAO015_Fixed_Income_Strategy: NOT_STARTED

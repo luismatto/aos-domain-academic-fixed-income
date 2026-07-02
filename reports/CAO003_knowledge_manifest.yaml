@@ -1,0 +1,15 @@
+knowledge_manifest:
+  object_id: CAO003
+  title: Institutional Investment Process
+  status: READY_FOR_COMPILATION
+  knowledge_units: 8
+  concepts_and_relation_items: 59
+  relations_items: 59
+  competencies: 3
+  professional_decisions: 4
+  learning_capabilities: 4
+  learning_units: 1
+  evidence_sources: 8
+  evidence_layer: complete
+  professional_layer: complete
+  learning_layer: complete

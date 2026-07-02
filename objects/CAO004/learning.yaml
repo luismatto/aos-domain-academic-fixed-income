@@ -1,0 +1,44 @@
+learning:
+  id: LPKG-CAO004
+  title: Learning Package for Time Value of Money
+  capabilities:
+    - id: LC401
+      title: Explain the economic intuition of present value and future value
+      linked_competencies:
+        - PC401
+    - id: LC402
+      title: Compute present and future values under simple compound and continuous conventions
+      linked_competencies:
+        - PC401
+        - PC403
+    - id: LC403
+      title: Build a dated cash flow discounting table for a fixed income instrument
+      linked_competencies:
+        - PC402
+    - id: LC404
+      title: Compare equivalent rates under different compounding frequencies
+      linked_competencies:
+        - PC401
+        - PC403
+  learning_units:
+    - id: LU004
+      title: Time Value of Money
+      duration: 4h
+      status: ready_for_compilation
+  required_assets:
+    - slides
+    - workshop
+    - instructor_guide
+    - student_guide
+    - exercises
+    - solutions
+    - rubric
+    - dgpi
+    - toolbox
+  assessment:
+    mode: quantitative_valuation_foundation
+    evidence:
+      - present_value_calculation
+      - future_value_calculation
+      - equivalent_rate_conversion
+      - discounted_cash_flow_table

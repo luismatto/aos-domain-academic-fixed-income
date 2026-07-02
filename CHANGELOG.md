@@ -1,14 +1,13 @@
-# MR-001 Changelog
+# FI-DER-0005 Validation Candidate Changelog
 
 ## Added
-- `scripts/domain_discovery.R`
-- Canonical Object Template under `templates/canonical_object/`
+- CAO003 Institutional Investment Process.
+- CAO004 Time Value of Money.
+- Domain Knowledge Graph generator.
+- Generalized discovery-based validator, manifest generator and coverage engine.
+- Canonical object template.
 
 ## Changed
-- `validate_domain.R` now discovers CAO objects automatically.
-- `generate_manifest.R` now generates manifests for every discovered CAO.
-- `coverage_report.R` now computes coverage from discovered CAO objects.
-- `run_tests.R` validates dynamic discovery instead of hard-coded CAO lists.
-
-## Status
-Validation candidate.
+- `scripts/run_tests.R` now validates FI-DER-0005.
+- Domain ledger updated through FI-DER-0005.
+- Coverage report now computes discovered and complete objects automatically.

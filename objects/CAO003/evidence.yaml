@@ -1,0 +1,31 @@
+evidence:
+  id: EVID-CAO003
+  title: Evidence Package for Institutional Investment Process
+  textbooks:
+    - id: TXT301
+      title: Managing Fixed Income Portfolios
+      relevance: IPS construction, strategic allocation, tactical positioning and performance evaluation
+    - id: TXT302
+      title: Fixed Income Analysis
+      relevance: bond risk measures, yield measures and portfolio construction
+  standards:
+    - id: STD301
+      title: Investment Policy Statement professional standards
+      relevance: objectives, constraints, governance and documentation
+    - id: STD302
+      title: CFA portfolio management process
+      relevance: planning execution and feedback stages
+  regulations:
+    - id: REG301
+      title: Institutional investment governance practice
+      relevance: committee oversight, risk limits and reporting requirements
+    - id: REG302
+      title: Prudential investment regulation
+      relevance: eligible assets, concentration limits and risk control
+  professional_practice:
+    - id: PRA301
+      title: Portfolio management process
+      relevance: systematic transformation of mandate into portfolio design and monitoring
+    - id: PRA302
+      title: Performance attribution practice
+      relevance: evaluation of duration, curve, spread and selection effects

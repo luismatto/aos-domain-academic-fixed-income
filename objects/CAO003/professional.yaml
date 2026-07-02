@@ -1,0 +1,50 @@
+professional:
+  id: PPKG-CAO003
+  title: Professional Package for Institutional Investment Process
+  competencies:
+    - id: PC301
+      title: Build an investment policy statement for a fixed income mandate
+      observable_evidence: writes objectives constraints eligible universe benchmarks and monitoring rules
+    - id: PC302
+      title: Translate mandate and constraints into a portfolio construction workflow
+      observable_evidence: designs strategic and tactical steps consistent with the IPS
+    - id: PC303
+      title: Evaluate implementation and monitoring requirements
+      observable_evidence: identifies execution controls rebalancing rules and reporting metrics
+  decisions:
+    - id: PD301
+      title: Define the investment policy statement structure
+      criteria:
+        - objective clarity
+        - constraint completeness
+        - eligible universe
+        - benchmark alignment
+        - governance process
+    - id: PD302
+      title: Select strategic allocation parameters
+      criteria:
+        - horizon
+        - liability profile
+        - risk budget
+        - benchmark duration
+        - liquidity requirement
+    - id: PD303
+      title: Determine tactical deviation limits
+      criteria:
+        - active risk budget
+        - duration tolerance
+        - credit spread exposure
+        - curve positioning limits
+        - liquidity impact
+    - id: PD304
+      title: Establish monitoring and rebalancing rules
+      criteria:
+        - drift threshold
+        - compliance frequency
+        - performance attribution
+        - escalation process
+  professional_evidence:
+    - investment_policy_statement
+    - portfolio_process_map
+    - eligible_universe_definition
+    - monitoring_and_rebalancing_protocol

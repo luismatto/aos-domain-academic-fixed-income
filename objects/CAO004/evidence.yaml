@@ -1,0 +1,28 @@
+evidence:
+  id: EVID-CAO004
+  title: Evidence Package for Time Value of Money
+  textbooks:
+    - id: TXT401
+      title: Fixed Income Analysis
+      relevance: present value, discount factors and bond pricing foundations
+    - id: TXT402
+      title: Fixed Income Securities
+      relevance: compounding conventions, discounting and term structure foundations
+    - id: TXT403
+      title: Mathematics of Investment and Credit
+      relevance: interest theory, annuities and equivalence of rates
+  standards:
+    - id: STD401
+      title: CFA quantitative methods and fixed income foundations
+      relevance: time value of money, yield conventions and fixed income valuation
+  regulations:
+    - id: REG401
+      title: Market convention documentation
+      relevance: day count, settlement and compounding conventions used in securities markets
+  professional_practice:
+    - id: PRA401
+      title: Bond pricing desk practice
+      relevance: valuation of future cash flows using discount factors and market conventions
+    - id: PRA402
+      title: Treasury and ALM practice
+      relevance: comparison of cash flows across dates and discount curve construction

@@ -1,0 +1,15 @@
+knowledge_manifest:
+  object_id: CAO001
+  title: Institutional Investment Ecosystem
+  status: READY_FOR_COMPILATION
+  knowledge_units: 6
+  concepts_and_relation_items: 51
+  relations_items: 51
+  competencies: 3
+  professional_decisions: 3
+  learning_capabilities: 3
+  learning_units: 1
+  evidence_sources: 8
+  evidence_layer: complete
+  professional_layer: complete
+  learning_layer: complete

@@ -1,0 +1,15 @@
+knowledge_manifest:
+  object_id: CAO004
+  title: Time Value of Money
+  status: READY_FOR_COMPILATION
+  knowledge_units: 6
+  concepts_and_relation_items: 50
+  relations_items: 50
+  competencies: 3
+  professional_decisions: 3
+  learning_capabilities: 4
+  learning_units: 1
+  evidence_sources: 7
+  evidence_layer: complete
+  professional_layer: complete
+  learning_layer: complete

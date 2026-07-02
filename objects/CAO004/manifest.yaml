@@ -1,0 +1,26 @@
+manifest:
+  id: MANIFEST-CAO004
+  object_id: CAO004
+  title: Time Value of Money
+  release: FI-DER-0005
+  status: ready_for_compilation
+  required_files:
+    - metadata.yaml
+    - knowledge.yaml
+    - evidence.yaml
+    - professional.yaml
+    - learning.yaml
+    - manifest.yaml
+  validation:
+    governance_layer: complete
+    knowledge_layer: complete
+    evidence_layer: complete
+    professional_layer: complete
+    learning_layer: complete
+  generation_readiness:
+    blueprint: true
+    air: true
+    slides: pending_generator
+    workshop: pending_generator
+    assessment: pending_generator
+    toolbox: pending_generator

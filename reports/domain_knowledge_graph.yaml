@@ -1,0 +1,30 @@
+domain_knowledge_graph:
+  release: FI-DER-0005
+  nodes:
+    - id: CAO001
+      title: Institutional Investment Ecosystem
+    - id: CAO002
+      title: Institutional Types and Mandates
+    - id: CAO003
+      title: Institutional Investment Process
+    - id: CAO004
+      title: Time Value of Money
+  dependency_edges:
+    - from: CAO001
+      to: CAO002
+      relation: prerequisite_of
+    - from: CAO001
+      to: CAO003
+      relation: prerequisite_of
+    - from: CAO002
+      to: CAO003
+      relation: prerequisite_of
+    - from: CAO001
+      to: CAO004
+      relation: prerequisite_of
+    - from: CAO002
+      to: CAO004
+      relation: prerequisite_of
+    - from: CAO003
+      to: CAO004
+      relation: prerequisite_of

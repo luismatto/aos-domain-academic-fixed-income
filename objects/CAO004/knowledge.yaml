@@ -1,0 +1,83 @@
+knowledge:
+  id: KPKG-CAO004
+  title: Time Value of Money Knowledge Package
+  coverage_target: complete
+  units:
+    - id: K401
+      title: Time value principle
+      concepts:
+        - present value
+        - future value
+        - opportunity cost
+        - discounting
+        - compounding
+      relations:
+        - money today differs from money tomorrow because capital has an opportunity cost
+        - valuation converts cash flows across time using accumulation or discount factors
+    - id: K402
+      title: Simple and compound accumulation
+      concepts:
+        - simple interest
+        - compound interest
+        - accumulation factor
+        - compounding frequency
+        - effective rate
+      relations:
+        - compound interest reinvests interest into principal
+        - effective rates provide comparable growth over a common horizon
+      formulas:
+        - FV = PV * (1 + r)^n
+        - FV = PV * (1 + r/m)^(m*n)
+    - id: K403
+      title: Discount factors and present value
+      concepts:
+        - discount factor
+        - present value factor
+        - discount rate
+        - maturity
+        - valuation date
+      relations:
+        - discount factors transform future cash flows into present values
+        - present value is the foundation of fixed income pricing
+      formulas:
+        - PV = FV / (1 + r)^n
+        - DF = 1 / (1 + r)^n
+    - id: K404
+      title: Rate conventions
+      concepts:
+        - nominal rate
+        - effective annual rate
+        - periodic rate
+        - continuously compounded rate
+        - day count convention
+      relations:
+        - rate conventions affect comparability of yields and prices
+        - fixed income valuation requires consistency between cash flow timing and rate convention
+      formulas:
+        - EAR = (1 + r_m/m)^m - 1
+        - FV = PV * exp(r*t)
+    - id: K405
+      title: Annuities and level payments
+      concepts:
+        - ordinary annuity
+        - annuity due
+        - payment
+        - present value annuity factor
+        - future value annuity factor
+      relations:
+        - annuity factors summarize the value of level payment streams
+        - fixed income coupons are valued as recurring cash flows plus principal
+      formulas:
+        - PV = PMT * (1 - (1 + r)^(-n)) / r
+        - FV = PMT * ((1 + r)^n - 1) / r
+    - id: K406
+      title: Term structure foundation
+      concepts:
+        - spot rate
+        - zero coupon discount factor
+        - forward rate
+        - yield curve
+        - no arbitrage valuation
+      relations:
+        - discount factors across maturities form the basis of the term structure
+        - fixed income pricing uses maturity specific discount rates when the curve is non flat
