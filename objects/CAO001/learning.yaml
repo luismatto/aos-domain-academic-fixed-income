@@ -1,0 +1,38 @@
+learning:
+  id: LPKG-CAO001
+  title: Learning Package for Institutional Investment Ecosystem
+  capabilities:
+    - id: LC001
+      title: Explain why different institutions require different fixed income portfolios
+      linked_competencies:
+        - PC001
+        - PC002
+    - id: LC002
+      title: Build a mandate to constraint map for a hypothetical institution
+      linked_competencies:
+        - PC002
+    - id: LC003
+      title: Interpret the role of issuers, investors and intermediaries in fixed income markets
+      linked_competencies:
+        - PC003
+  learning_units:
+    - id: LU001
+      title: Institutional Investment Ecosystem
+      duration: 4h
+      status: ready_for_compilation
+  required_assets:
+    - slides
+    - workshop
+    - instructor_guide
+    - student_guide
+    - exercises
+    - solutions
+    - rubric
+    - dgpi
+  assessment:
+    mode: professional_application
+    evidence:
+      - institutional_profile
+      - mandate_map
+      - constraint_matrix
+      - executive_memo
