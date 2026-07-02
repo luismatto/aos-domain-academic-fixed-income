@@ -1,3 +1,15 @@
-# FI-DER-0008 HF1 Migration
+# FI-DER-0009 Migration
 
-Copy the contents of `overlay/` over the repository root and rerun `source("scripts/run_tests.R")`.
+1. Copy the contents of `overlay/` into the repository root.
+2. Replace existing files.
+3. Run:
+
+```r
+source("scripts/run_tests.R")
+```
+
+Expected result:
+
+```text
+FI-DER-0009 STATUS: PASS
+```

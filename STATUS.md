@@ -1,3 +1,12 @@
-# FI-DER-0008 HF1 Status
+# FI-DER-0009 Status
 
-Validation candidate hotfix for missing AIR scripts.
+Status: VALIDATION CANDIDATE
+
+Component: LU001 Executable Learning Package
+
+Expected validation:
+
+```text
+LU001 package validation: PASS
+FI-DER-0009 STATUS: PASS
+```
