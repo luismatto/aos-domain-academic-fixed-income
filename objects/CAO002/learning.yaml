@@ -1,0 +1,39 @@
+learning:
+  id: LPKG-CAO002
+  title: Learning Package for Institutional Types and Mandates
+  capabilities:
+    - id: LC201
+      title: Compare institutional investor types using objectives constraints and liabilities
+      linked_competencies:
+        - PC201
+        - PC203
+    - id: LC202
+      title: Build a mandate comparison matrix for central banks pension funds insurers banks and asset managers
+      linked_competencies:
+        - PC201
+        - PC202
+    - id: LC203
+      title: Recommend portfolio constraints consistent with a specific institutional mandate
+      linked_competencies:
+        - PC202
+  learning_units:
+    - id: LU002
+      title: Institutional Types and Mandates
+      duration: 4h
+      status: ready_for_compilation
+  required_assets:
+    - slides
+    - workshop
+    - instructor_guide
+    - student_guide
+    - exercises
+    - solutions
+    - rubric
+    - dgpi
+  assessment:
+    mode: mandate_classification_and_constraint_design
+    evidence:
+      - institutional_classification
+      - mandate_comparison_table
+      - constraint_translation_matrix
+      - benchmark_selection_note
