@@ -1,0 +1,51 @@
+{
+  "blueprint_id": "BP-CAO001",
+  "object_id": "CAO001",
+  "title": "Institutional Investment Ecosystem",
+  "version": "1.0.0",
+  "domain": "fixed_income",
+  "source": "CanonicalAcademicObject",
+  "compiler_target": "AOS Core ER-0005",
+  "metadata": {
+    "knowledge_units": 6,
+    "competencies": 3,
+    "professional_decisions": 3,
+    "learning_capabilities": 3
+  },
+  "ids": {
+    "knowledge": [
+      "K001",
+      "K002",
+      "K003",
+      "K004",
+      "K005",
+      "K006"
+    ],
+    "competencies": [
+      "PC001",
+      "PC002",
+      "PC003"
+    ],
+    "professional_decisions": [
+      "PD001",
+      "PD002",
+      "PD003"
+    ],
+    "learning_capabilities": [
+      "LC001",
+      "LC002",
+      "LC003"
+    ]
+  },
+  "nodes": [
+    {"id": "CAO001", "type": "academic_object", "title": "Institutional Investment Ecosystem"},
+    {"id": "CAO001-KNOWLEDGE", "type": "knowledge_layer", "title": "Knowledge Layer"},
+    {"id": "CAO001-PROFESSIONAL", "type": "professional_layer", "title": "Professional Layer"},
+    {"id": "CAO001-LEARNING", "type": "learning_layer", "title": "Learning Layer"}
+  ],
+  "edges": [
+    {"source": "CAO001", "target": "CAO001-KNOWLEDGE", "relation": "has_layer"},
+    {"source": "CAO001", "target": "CAO001-PROFESSIONAL", "relation": "has_layer"},
+    {"source": "CAO001", "target": "CAO001-LEARNING", "relation": "has_layer"}
+  ]
+}

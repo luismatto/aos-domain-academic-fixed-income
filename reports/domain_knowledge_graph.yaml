@@ -1,30 +1,47 @@
 domain_knowledge_graph:
-  release: FI-DER-0005
+  release: FI-DER-0006
+  generated_from: CanonicalAcademicObjects
   nodes:
     - id: CAO001
       title: Institutional Investment Ecosystem
+      type: CanonicalAcademicObject
+      knowledge_units: 6
+      competencies: 3
+      learning_capabilities: 3
     - id: CAO002
       title: Institutional Types and Mandates
+      type: CanonicalAcademicObject
+      knowledge_units: 7
+      competencies: 3
+      learning_capabilities: 3
     - id: CAO003
       title: Institutional Investment Process
+      type: CanonicalAcademicObject
+      knowledge_units: 8
+      competencies: 3
+      learning_capabilities: 4
     - id: CAO004
       title: Time Value of Money
-  dependency_edges:
-    - from: CAO001
-      to: CAO002
+      type: CanonicalAcademicObject
+      knowledge_units: 6
+      competencies: 3
+      learning_capabilities: 4
+  edges:
+    - source: - CAO001
+      target: CAO002
       relation: prerequisite_of
-    - from: CAO001
-      to: CAO003
+    - source: - CAO001
+      target: CAO003
       relation: prerequisite_of
-    - from: CAO002
-      to: CAO003
+    - source: - CAO002
+      target: CAO003
       relation: prerequisite_of
-    - from: CAO001
-      to: CAO004
+    - source: - CAO001
+      target: CAO004
       relation: prerequisite_of
-    - from: CAO002
-      to: CAO004
+    - source: - CAO002
+      target: CAO004
       relation: prerequisite_of
-    - from: CAO003
-      to: CAO004
+    - source: - CAO003
+      target: CAO004
       relation: prerequisite_of

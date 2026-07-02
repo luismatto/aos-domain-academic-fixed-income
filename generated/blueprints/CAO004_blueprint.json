@@ -1,0 +1,52 @@
+{
+  "blueprint_id": "BP-CAO004",
+  "object_id": "CAO004",
+  "title": "Time Value of Money",
+  "version": "1.0.0",
+  "domain": "fixed_income",
+  "source": "CanonicalAcademicObject",
+  "compiler_target": "AOS Core ER-0005",
+  "metadata": {
+    "knowledge_units": 6,
+    "competencies": 3,
+    "professional_decisions": 3,
+    "learning_capabilities": 4
+  },
+  "ids": {
+    "knowledge": [
+      "K401",
+      "K402",
+      "K403",
+      "K404",
+      "K405",
+      "K406"
+    ],
+    "competencies": [
+      "PC401",
+      "PC402",
+      "PC403"
+    ],
+    "professional_decisions": [
+      "PD401",
+      "PD402",
+      "PD403"
+    ],
+    "learning_capabilities": [
+      "LC401",
+      "LC402",
+      "LC403",
+      "LC404"
+    ]
+  },
+  "nodes": [
+    {"id": "CAO004", "type": "academic_object", "title": "Time Value of Money"},
+    {"id": "CAO004-KNOWLEDGE", "type": "knowledge_layer", "title": "Knowledge Layer"},
+    {"id": "CAO004-PROFESSIONAL", "type": "professional_layer", "title": "Professional Layer"},
+    {"id": "CAO004-LEARNING", "type": "learning_layer", "title": "Learning Layer"}
+  ],
+  "edges": [
+    {"source": "CAO004", "target": "CAO004-KNOWLEDGE", "relation": "has_layer"},
+    {"source": "CAO004", "target": "CAO004-PROFESSIONAL", "relation": "has_layer"},
+    {"source": "CAO004", "target": "CAO004-LEARNING", "relation": "has_layer"}
+  ]
+}

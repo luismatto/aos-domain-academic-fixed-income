@@ -5,6 +5,8 @@
 | FI-DER-0001 | Domain Repository Bootstrap | PASS |
 | FI-DER-0002 | CAO001 Knowledge Package | PASS |
 | FI-DER-0003 | CAO002 Institutional Types and Mandates | PASS |
-| FI-DER-0004-MR001 | Domain Discovery Engine | PASS |
-| FI-DER-0004 | CAO003 Institutional Investment Process | VALIDATION CANDIDATE |
-| FI-DER-0005 | CAO004 Time Value of Money | VALIDATION CANDIDATE |
+| FI-DER-0004 | Domain Discovery and CAO003 | PASS |
+| FI-DER-0005 | CAO004 and Domain Knowledge Graph | PASS |
+| FI-DER-0006 | CAO to Blueprint Generator | PASS |
+| FI-DER-0007 | Domain AIR Generation | PASS |
+| FI-DER-0008 | Academic Asset Generator | VALIDATION CANDIDATE |

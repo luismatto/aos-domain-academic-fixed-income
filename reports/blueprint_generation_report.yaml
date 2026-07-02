@@ -1,0 +1,10 @@
+blueprint_generation_report:
+  release: FI-DER-0006
+  objects_discovered: 4
+  blueprints_generated: 4
+  status: PASS
+  outputs:
+    - generated/blueprints/CAO001_blueprint.json
+    - generated/blueprints/CAO002_blueprint.json
+    - generated/blueprints/CAO003_blueprint.json
+    - generated/blueprints/CAO004_blueprint.json

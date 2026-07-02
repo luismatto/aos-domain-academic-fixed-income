@@ -1,0 +1,52 @@
+{
+  "blueprint_id": "BP-CAO002",
+  "object_id": "CAO002",
+  "title": "Institutional Types and Mandates",
+  "version": "1.0.0",
+  "domain": "fixed_income",
+  "source": "CanonicalAcademicObject",
+  "compiler_target": "AOS Core ER-0005",
+  "metadata": {
+    "knowledge_units": 7,
+    "competencies": 3,
+    "professional_decisions": 3,
+    "learning_capabilities": 3
+  },
+  "ids": {
+    "knowledge": [
+      "K201",
+      "K202",
+      "K203",
+      "K204",
+      "K205",
+      "K206",
+      "K207"
+    ],
+    "competencies": [
+      "PC201",
+      "PC202",
+      "PC203"
+    ],
+    "professional_decisions": [
+      "PD201",
+      "PD202",
+      "PD203"
+    ],
+    "learning_capabilities": [
+      "LC201",
+      "LC202",
+      "LC203"
+    ]
+  },
+  "nodes": [
+    {"id": "CAO002", "type": "academic_object", "title": "Institutional Types and Mandates"},
+    {"id": "CAO002-KNOWLEDGE", "type": "knowledge_layer", "title": "Knowledge Layer"},
+    {"id": "CAO002-PROFESSIONAL", "type": "professional_layer", "title": "Professional Layer"},
+    {"id": "CAO002-LEARNING", "type": "learning_layer", "title": "Learning Layer"}
+  ],
+  "edges": [
+    {"source": "CAO002", "target": "CAO002-KNOWLEDGE", "relation": "has_layer"},
+    {"source": "CAO002", "target": "CAO002-PROFESSIONAL", "relation": "has_layer"},
+    {"source": "CAO002", "target": "CAO002-LEARNING", "relation": "has_layer"}
+  ]
+}

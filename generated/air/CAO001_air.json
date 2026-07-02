@@ -1,0 +1,27 @@
+{
+  "air_document": {
+    "id": "CAO001_AIR",
+    "object_id": "CAO001",
+    "title": "Institutional Investment Ecosystem",
+    "status": "READY_FOR_ASSET_GENERATION",
+    "source_blueprint": "generated/blueprints/CAO001_blueprint.json",
+    "canonical_layers": ["governance", "knowledge", "evidence", "professional", "learning"],
+    "dependencies": [],
+    "statistics": {
+      "knowledge_units": 6,
+      "competencies": 3,
+      "professional_decisions": 3,
+      "learning_capabilities": 3
+    },
+    "generation": {
+      "slides": "pending_asset_generator",
+      "workshop": "pending_asset_generator",
+      "instructor_guide": "pending_asset_generator",
+      "student_guide": "pending_asset_generator",
+      "exercises": "pending_asset_generator",
+      "solutions": "pending_asset_generator",
+      "rubric": "pending_asset_generator",
+      "dgpi": "pending_asset_generator"
+    }
+  }
+}

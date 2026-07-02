@@ -1,0 +1,21 @@
+asset_contract:
+  id: ASSET-CONTRACT-001
+  release: FI-DER-0008
+  required_assets:
+    - slides
+    - workshop
+    - instructor_guide
+    - student_guide
+    - exercises
+    - solutions
+    - rubric
+    - dgpi
+    - toolbox
+  generated_from:
+    - metadata.yaml
+    - knowledge.yaml
+    - evidence.yaml
+    - professional.yaml
+    - learning.yaml
+    - manifest.yaml
+  manual_edit_policy: generated_assets_are_not_source_of_truth
