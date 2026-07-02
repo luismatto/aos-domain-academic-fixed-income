@@ -1,0 +1,31 @@
+evidence:
+  id: EVID-CAO001
+  title: Evidence Package for Institutional Investment Ecosystem
+  textbooks:
+    - id: TXT001
+      title: Fixed Income Analysis
+      relevance: institutional investors, bond instruments, risk and return
+    - id: TXT002
+      title: Fixed Income Securities
+      relevance: term structure, duration, convexity and portfolio applications
+    - id: TXT003
+      title: Managing Fixed Income Portfolios
+      relevance: mandates, benchmarks, constraints and portfolio governance
+  standards:
+    - id: STD001
+      title: CFA fixed income curriculum concepts
+      relevance: institutional portfolio construction and fixed income risk factors
+  regulations:
+    - id: REG001
+      title: Central bank reserve and liquidity management practice
+      relevance: liquidity, safety and return hierarchy
+    - id: REG002
+      title: Pension and insurance investment regulation
+      relevance: liability driven investment and prudential constraints
+  professional_practice:
+    - id: PRA001
+      title: Investment policy statement practice
+      relevance: translation of mandate into constraints and eligible assets
+    - id: PRA002
+      title: ALM and liability matching practice
+      relevance: duration, cash flow matching and surplus risk
