@@ -1,0 +1,34 @@
+evidence:
+  id: EVID-CAO002
+  title: Evidence Package for Institutional Types and Mandates
+  textbooks:
+    - id: TXT201
+      title: Managing Fixed Income Portfolios
+      relevance: institutional mandates, objectives, constraints and benchmarks
+    - id: TXT202
+      title: Fixed Income Analysis
+      relevance: institutional investors and fixed income portfolio applications
+  standards:
+    - id: STD201
+      title: CFA institutional investor framework
+      relevance: classification of investor objectives and constraints
+    - id: STD202
+      title: IPS professional practice
+      relevance: mandate formation and constraint documentation
+  regulations:
+    - id: REG201
+      title: Reserve management governance practice
+      relevance: central bank portfolio objectives and risk limits
+    - id: REG202
+      title: Pension and insurance prudential regulation
+      relevance: liability matching and solvency constraints
+    - id: REG203
+      title: Bank liquidity and capital regulation
+      relevance: HQLA, liquidity buffers and banking book bond holdings
+  professional_practice:
+    - id: PRA201
+      title: Institutional investment policy statement
+      relevance: systematic mapping of institution type into mandate and constraints
+    - id: PRA202
+      title: ALM mandate design
+      relevance: translating liabilities into duration, liquidity and quality requirements
