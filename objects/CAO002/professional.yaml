@@ -1,0 +1,41 @@
+professional:
+  id: PPKG-CAO002
+  title: Professional Package for Institutional Types and Mandates
+  competencies:
+    - id: PC201
+      title: Classify institutional investors by mandate and liability profile
+      observable_evidence: assigns investor type based on horizon liquidity liabilities and regulation
+    - id: PC202
+      title: Translate institutional mandate into fixed income portfolio constraints
+      observable_evidence: produces mandate specific constraints for duration credit liquidity and currency
+    - id: PC203
+      title: Compare fixed income objectives across institutional types
+      observable_evidence: explains why similar instruments serve different institutional objectives
+  decisions:
+    - id: PD201
+      title: Determine the primary investment objective of an institution
+      criteria:
+        - liability structure
+        - governance mandate
+        - liquidity need
+        - performance measure
+    - id: PD202
+      title: Set mandate appropriate risk constraints
+      criteria:
+        - duration tolerance
+        - credit quality floor
+        - currency limits
+        - liquidity buffer requirement
+        - concentration limits
+    - id: PD203
+      title: Select benchmark type for an institutional fixed income mandate
+      criteria:
+        - liability linked benchmark
+        - market index benchmark
+        - absolute return target
+        - regulatory or accounting reference
+  professional_evidence:
+    - institutional_classification
+    - mandate_comparison_table
+    - constraint_translation_matrix
+    - benchmark_selection_note
