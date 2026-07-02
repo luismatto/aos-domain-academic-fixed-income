@@ -1,0 +1,80 @@
+knowledge:
+  id: KPKG-CAO001
+  title: Institutional Investment Ecosystem Knowledge Package
+  coverage_target: complete
+  units:
+    - id: K001
+      title: Institutional investor ecosystem
+      concepts:
+        - institutional investor
+        - fixed income market
+        - mandate
+        - constraint set
+      relations:
+        - institutional investors allocate capital through fixed income markets
+        - mandates determine eligible assets and risk limits
+    - id: K002
+      title: Types of institutions
+      concepts:
+        - central bank
+        - ministry of finance
+        - pension fund
+        - insurance company
+        - bank treasury
+        - mutual fund
+        - sovereign wealth fund
+      relations:
+        - institutions differ by liability structure
+        - institutions differ by regulatory constraints
+        - institutions differ by liquidity needs
+    - id: K003
+      title: Institutional mandates
+      concepts:
+        - capital preservation
+        - liquidity management
+        - liability matching
+        - income generation
+        - benchmark tracking
+        - risk budget
+      relations:
+        - mandate defines objective function
+        - mandate constrains duration exposure
+        - mandate constrains credit exposure
+    - id: K004
+      title: Fixed income participants
+      concepts:
+        - issuer
+        - investor
+        - broker dealer
+        - custodian
+        - regulator
+        - rating agency
+        - central securities depository
+      relations:
+        - issuers supply debt instruments
+        - investors demand cash flow profiles
+        - intermediaries support market access and liquidity
+    - id: K005
+      title: Fixed income constraints
+      concepts:
+        - duration constraint
+        - credit rating constraint
+        - liquidity constraint
+        - currency constraint
+        - concentration limit
+        - accounting classification
+      relations:
+        - constraints translate mandates into portfolio rules
+        - constraints determine feasible investment universe
+    - id: K006
+      title: Institutional decision context
+      concepts:
+        - investment horizon
+        - liability profile
+        - risk tolerance
+        - regulatory regime
+        - liquidity buffer
+        - governance process
+      relations:
+        - decision context determines appropriate portfolio design
+        - governance affects implementation and monitoring
