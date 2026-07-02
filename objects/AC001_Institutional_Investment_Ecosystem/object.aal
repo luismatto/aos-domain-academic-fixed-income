@@ -1,0 +1,39 @@
+object:
+  id: AC001
+  kind: AcademicComponent
+  title: Institutional Investment Ecosystem
+  domain: fixed_income
+  status: draft
+
+knowledge:
+  - id: K001
+    title: Institutional mandates
+  - id: K002
+    title: Fixed income market participants
+  - id: K003
+    title: Investment constraints and objectives
+
+competencies:
+  - id: C001
+    title: Distinguish institutional mandates and portfolio objectives
+  - id: C002
+    title: Map institutional constraints to fixed income decisions
+
+professional_decisions:
+  - id: D001
+    title: Select an appropriate fixed income mandate for an institution
+  - id: D002
+    title: Identify the relevant constraints for a bond portfolio
+
+learning_capabilities:
+  - id: LC001
+    title: Explain why different institutions require different bond portfolios
+
+assets:
+  requested:
+    - slides
+    - workshop
+    - dgpi
+    - rubric
+
+dependencies: []
