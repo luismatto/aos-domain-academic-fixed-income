@@ -11,15 +11,16 @@ required <- c(
   "manifest.yaml"
 )
 
-cao001_files <- file.path("objects/CAO001", required)
-cao001_complete <- all(file.exists(cao001_files))
+is_complete <- function(object_id) {
+  all(file.exists(file.path("objects", object_id, required)))
+}
 
 coverage <- c(
   "domain_coverage:",
-  "  release: FI-DER-0002",
+  "  release: FI-DER-0003",
   "  objects:",
-  paste0("    CAO001_Institutional_Investment_Ecosystem: ", ifelse(cao001_complete, "COMPLETE", "INCOMPLETE")),
-  "    CAO002_Institutional_Types_and_Mandates: NOT_STARTED",
+  paste0("    CAO001_Institutional_Investment_Ecosystem: ", ifelse(is_complete("CAO001"), "COMPLETE", "INCOMPLETE")),
+  paste0("    CAO002_Institutional_Types_and_Mandates: ", ifelse(is_complete("CAO002"), "COMPLETE", "INCOMPLETE")),
   "    CAO003_Institutional_Investment_Process: NOT_STARTED",
   "    CAO004_Time_Value_of_Money: NOT_STARTED"
 )
