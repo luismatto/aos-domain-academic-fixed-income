@@ -1,0 +1,9 @@
+dgpi:
+  id: DGPI-AC001
+  title: Institutional Investment Ecosystem decision project
+  prompt: Analyze a hypothetical institution and define its fixed income investment mandate, constraints and required asset outputs.
+  deliverables:
+    - institutional_profile
+    - mandate_map
+    - constraint_matrix
+    - executive_memo
