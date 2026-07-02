@@ -1,4 +1,4 @@
-message("AOS Fixed Income Domain FI-DER-0002 validation")
+message("AOS Fixed Income Domain FI-DER-0003 validation")
 
 source("scripts/validate_domain.R")
 source("scripts/generate_manifest.R")
@@ -17,7 +17,14 @@ required_paths <- c(
   "objects/CAO001/professional.yaml",
   "objects/CAO001/learning.yaml",
   "objects/CAO001/manifest.yaml",
+  "objects/CAO002/metadata.yaml",
+  "objects/CAO002/knowledge.yaml",
+  "objects/CAO002/evidence.yaml",
+  "objects/CAO002/professional.yaml",
+  "objects/CAO002/learning.yaml",
+  "objects/CAO002/manifest.yaml",
   "reports/CAO001_knowledge_manifest.yaml",
+  "reports/CAO002_knowledge_manifest.yaml",
   "reports/domain_coverage.yaml"
 )
 
@@ -26,4 +33,4 @@ if (length(missing) > 0) {
   stop(paste("Missing required paths:", paste(missing, collapse = ", ")), call. = FALSE)
 }
 
-message("FI-DER-0002 STATUS: PASS")
+message("FI-DER-0003 STATUS: PASS")
