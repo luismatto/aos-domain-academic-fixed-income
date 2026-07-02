@@ -1,0 +1,42 @@
+professional:
+  id: PPKG-CAO001
+  title: Professional Package for Institutional Investment Ecosystem
+  competencies:
+    - id: PC001
+      title: Distinguish institutional mandates across investor types
+      observable_evidence: classifies institution by liabilities, horizon, liquidity and regulation
+    - id: PC002
+      title: Map institutional objectives into fixed income constraints
+      observable_evidence: produces a mandate to constraint matrix
+    - id: PC003
+      title: Identify relevant fixed income participants and their functions
+      observable_evidence: explains issuer investor intermediary regulator interactions
+  decisions:
+    - id: PD001
+      title: Select an appropriate fixed income mandate for an institution
+      criteria:
+        - investment horizon
+        - liquidity requirement
+        - liability structure
+        - regulatory constraints
+        - risk tolerance
+    - id: PD002
+      title: Define the feasible investment universe for an institutional portfolio
+      criteria:
+        - eligible issuers
+        - currency exposure
+        - duration limits
+        - credit quality limits
+        - liquidity limits
+    - id: PD003
+      title: Identify governance requirements for portfolio implementation
+      criteria:
+        - approval process
+        - monitoring frequency
+        - reporting standard
+        - escalation rules
+  professional_evidence:
+    - mandate_map
+    - constraint_matrix
+    - institutional_profile
+    - executive_recommendation
