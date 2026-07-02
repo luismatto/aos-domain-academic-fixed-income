@@ -1,0 +1,83 @@
+knowledge:
+  id: KPKG-CAO002
+  title: Institutional Types and Mandates Knowledge Package
+  coverage_target: complete
+  units:
+    - id: K201
+      title: Central banks and reserve managers
+      concepts:
+        - foreign reserves
+        - liquidity tranche
+        - investment tranche
+        - safety liquidity return hierarchy
+        - monetary and financial stability mandate
+      relations:
+        - reserve managers prioritize safety and liquidity before return
+        - central bank mandates constrain currency credit and duration risk
+    - id: K202
+      title: Ministries of finance and sovereign debt managers
+      concepts:
+        - debt management office
+        - refinancing risk
+        - maturity profile
+        - benchmark bond
+        - domestic yield curve
+      relations:
+        - sovereign debt managers issue debt to fund fiscal needs
+        - debt management choices shape the sovereign yield curve
+    - id: K203
+      title: Pension funds
+      concepts:
+        - long horizon liabilities
+        - contribution flows
+        - replacement rate objective
+        - strategic asset allocation
+        - liability driven investment
+      relations:
+        - pension funds manage long duration liabilities
+        - pension mandates support duration exposure and diversification
+    - id: K204
+      title: Insurance companies
+      concepts:
+        - actuarial liabilities
+        - asset liability matching
+        - solvency capital
+        - guaranteed cash flows
+        - reinvestment risk
+      relations:
+        - insurers use fixed income assets to match liability cash flows
+        - solvency regulation constrains asset quality and duration mismatch
+    - id: K205
+      title: Banks and treasury portfolios
+      concepts:
+        - liquidity coverage
+        - high quality liquid assets
+        - banking book
+        - trading book
+        - interest rate risk in the banking book
+      relations:
+        - banks hold bonds for liquidity income and balance sheet management
+        - bank mandates differ between treasury liquidity and trading activities
+    - id: K206
+      title: Mutual funds and asset managers
+      concepts:
+        - benchmark mandate
+        - redemption risk
+        - tracking error
+        - active duration position
+        - credit selection
+      relations:
+        - asset managers implement client mandates through portfolio guidelines
+        - open ended funds face liquidity and redemption constraints
+    - id: K207
+      title: Mandate comparison framework
+      concepts:
+        - objective function
+        - investment horizon
+        - liquidity need
+        - liability structure
+        - regulatory constraint
+        - performance benchmark
+      relations:
+        - institutional type determines mandate characteristics
+        - mandate characteristics determine fixed income portfolio design
