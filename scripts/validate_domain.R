@@ -1,31 +1,20 @@
 message("Validating fixed income domain objects")
 
-object_ids <- c("CAO001", "CAO002")
-required_files <- c(
-  "metadata.yaml",
-  "knowledge.yaml",
-  "evidence.yaml",
-  "professional.yaml",
-  "learning.yaml",
-  "manifest.yaml"
-)
-
-required_paths <- c("policies/institutional.apl")
-for (object_id in object_ids) {
-  required_paths <- c(required_paths, file.path("objects", object_id, required_files))
-}
-
-missing <- required_paths[!file.exists(required_paths)]
-if (length(missing) > 0) {
-  stop(paste("Missing required paths:", paste(missing, collapse = ", ")), call. = FALSE)
-}
+source("scripts/domain_discovery.R")
 
 contains_text <- function(path, text) {
   any(grepl(text, readLines(path, warn = FALSE), fixed = TRUE))
 }
 
-validate_object <- function(object_id) {
-  object_dir <- file.path("objects", object_id)
+validate_object <- function(object_id, objects_dir = "objects") {
+  object_dir <- file.path(objects_dir, object_id)
+  required_paths <- file.path(object_dir, canonical_required_files())
+
+  missing <- required_paths[!file.exists(required_paths)]
+  if (length(missing) > 0) {
+    stop(paste(object_id, "missing required paths:", paste(missing, collapse = ", ")), call. = FALSE)
+  }
+
   checks <- c(
     contains_text(file.path(object_dir, "metadata.yaml"), "status: ready_for_compilation"),
     contains_text(file.path(object_dir, "knowledge.yaml"), "coverage_target: complete"),
@@ -34,12 +23,16 @@ validate_object <- function(object_id) {
     contains_text(file.path(object_dir, "learning.yaml"), "required_assets:"),
     contains_text(file.path(object_dir, "manifest.yaml"), "knowledge_layer: complete")
   )
-  if (!all(checks)) {
-    stop(paste0(object_id, " validation checks failed"), call. = FALSE)
-  }
+
+  if (!all(checks)) stop(paste0(object_id, " validation checks failed"), call. = FALSE)
   message(object_id, " validation: PASS")
+  TRUE
 }
 
-for (object_id in object_ids) {
-  validate_object(object_id)
-}
+objects <- discover_objects()
+if (length(objects) == 0) stop("No canonical academic objects discovered under objects/", call. = FALSE)
+if (!file.exists("policies/institutional.apl")) stop("Missing required policy: policies/institutional.apl", call. = FALSE)
+
+for (object_id in objects) validate_object(object_id)
+
+message("Domain object validation: PASS")

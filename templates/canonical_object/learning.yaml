@@ -1,0 +1,17 @@
+learning:
+  id: LPKG-CAOXXX
+  title: Learning Package
+  capabilities: []
+  learning_units: []
+  required_assets:
+    - slides
+    - workshop
+    - instructor_guide
+    - student_guide
+    - exercises
+    - solutions
+    - rubric
+    - dgpi
+  assessment:
+    mode: professional_application
+    evidence: []

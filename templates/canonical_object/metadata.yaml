@@ -1,0 +1,16 @@
+id: CAOXXX
+title: Canonical Object Title
+version: 1.0.0
+domain: fixed_income
+status: draft
+release: FI-DER-XXXX
+object_type: CanonicalAcademicObject
+canonical_layers:
+  - governance
+  - knowledge
+  - evidence
+  - professional
+  - learning
+dependencies: []
+owners:
+  - academic_domain_fixed_income

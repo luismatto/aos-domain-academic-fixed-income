@@ -1,36 +1,26 @@
-message("AOS Fixed Income Domain FI-DER-0003 validation")
+message("AOS Fixed Income Domain FI-DER-0004-MR001 validation")
 
+source("scripts/domain_discovery.R")
 source("scripts/validate_domain.R")
 source("scripts/generate_manifest.R")
 source("scripts/coverage_report.R")
 
+objects <- discover_objects()
+if (length(objects) < 2) stop("Expected at least CAO001 and CAO002", call. = FALSE)
+
+for (object_id in objects) {
+  manifest_path <- file.path("reports", paste0(object_id, "_knowledge_manifest.yaml"))
+  if (!file.exists(manifest_path)) stop(paste("Missing generated manifest:", manifest_path), call. = FALSE)
+}
+
 required_paths <- c(
-  "Readme.md",
-  "docs/DOMAIN_ARCHITECTURE.md",
-  "docs/DOMAIN_LEDGER.md",
-  "policies/institutional.apl",
-  "objects/AC001_Institutional_Investment_Ecosystem/object.aal",
-  "objects/AC001_Institutional_Investment_Ecosystem/dgpi.yaml",
-  "objects/CAO001/metadata.yaml",
-  "objects/CAO001/knowledge.yaml",
-  "objects/CAO001/evidence.yaml",
-  "objects/CAO001/professional.yaml",
-  "objects/CAO001/learning.yaml",
-  "objects/CAO001/manifest.yaml",
-  "objects/CAO002/metadata.yaml",
-  "objects/CAO002/knowledge.yaml",
-  "objects/CAO002/evidence.yaml",
-  "objects/CAO002/professional.yaml",
-  "objects/CAO002/learning.yaml",
-  "objects/CAO002/manifest.yaml",
-  "reports/CAO001_knowledge_manifest.yaml",
-  "reports/CAO002_knowledge_manifest.yaml",
-  "reports/domain_coverage.yaml"
+  "Readme.md", "docs/DOMAIN_ARCHITECTURE.md", "docs/DOMAIN_LEDGER.md",
+  "policies/institutional.apl", "scripts/domain_discovery.R",
+  "scripts/validate_domain.R", "scripts/generate_manifest.R",
+  "scripts/coverage_report.R", "reports/domain_coverage.yaml"
 )
 
 missing <- required_paths[!file.exists(required_paths)]
-if (length(missing) > 0) {
-  stop(paste("Missing required paths:", paste(missing, collapse = ", ")), call. = FALSE)
-}
+if (length(missing) > 0) stop(paste("Missing required paths:", paste(missing, collapse = ", ")), call. = FALSE)
 
-message("FI-DER-0003 STATUS: PASS")
+message("FI-DER-0004-MR001 STATUS: PASS")

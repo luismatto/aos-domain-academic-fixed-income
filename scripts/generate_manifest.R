@@ -1,12 +1,16 @@
 message("Generating CAO knowledge manifests")
 
+source("scripts/domain_discovery.R")
+
 count_pattern <- function(path, pattern) {
   lines <- readLines(path, warn = FALSE)
   sum(grepl(pattern, lines, fixed = TRUE))
 }
 
-generate_for_object <- function(object_id, title) {
+generate_for_object <- function(object_id) {
   object_dir <- file.path("objects", object_id)
+  title <- object_title(object_id)
+
   knowledge_units <- count_pattern(file.path(object_dir, "knowledge.yaml"), "    - id: K")
   competencies <- count_pattern(file.path(object_dir, "professional.yaml"), "    - id: PC")
   decisions <- count_pattern(file.path(object_dir, "professional.yaml"), "    - id: PD")
@@ -26,12 +30,12 @@ generate_for_object <- function(object_id, title) {
     "  learning_layer: complete"
   )
 
+  if (!dir.exists("reports")) dir.create("reports", recursive = TRUE)
   out <- file.path("reports", paste0(object_id, "_knowledge_manifest.yaml"))
   writeLines(manifest, out)
   message("Wrote ", out)
 }
 
-if (!dir.exists("reports")) dir.create("reports", recursive = TRUE)
-
-generate_for_object("CAO001", "Institutional Investment Ecosystem")
-generate_for_object("CAO002", "Institutional Types and Mandates")
+objects <- discover_objects()
+if (length(objects) == 0) stop("No canonical academic objects discovered under objects/", call. = FALSE)
+for (object_id in objects) generate_for_object(object_id)

@@ -1,0 +1,19 @@
+manifest:
+  id: MANIFEST-CAOXXX
+  object_id: CAOXXX
+  title: Canonical Object Title
+  release: FI-DER-XXXX
+  status: draft
+  required_files:
+    - metadata.yaml
+    - knowledge.yaml
+    - evidence.yaml
+    - professional.yaml
+    - learning.yaml
+    - manifest.yaml
+  validation:
+    governance_layer: pending
+    knowledge_layer: pending
+    evidence_layer: pending
+    professional_layer: pending
+    learning_layer: pending
