@@ -1,13 +1,16 @@
-# Fixed Income Domain Ledger
-
-| Domain Release | Component | Status |
-|---|---|---|
-| FI-DER-0001 | Domain Repository Bootstrap | PASS |
-| FI-DER-0002 | CAO001 Knowledge Package | PASS |
-| FI-DER-0003 | CAO002 Institutional Types and Mandates | PASS |
-| FI-DER-0004 | Domain Discovery Engine | PASS |
-| FI-DER-0005 | CAO003, CAO004, Knowledge Graph | PASS |
-| FI-DER-0006 | CAO to Blueprint Generator | PASS |
-| FI-DER-0007 | AIR Generation | PASS |
-| FI-DER-0008 | Asset Generator | PASS |
-| FI-DER-0009 | LU001 Executable Learning Package | VALIDATION CANDIDATE |
+# Reconstruct the technical LU001 package from canonical generated assets.
+source("scripts/domain_discovery.R")
+ids <- c("CAO001", "CAO002")
+assets <- c("slides", "workshop", "instructor_guide", "student_guide", "exercises", "solutions", "rubric", "dgpi", "toolbox")
+out <- "generated/packages/LU001"
+dir.create(out, recursive = TRUE, showWarnings = FALSE)
+for (id in ids) {
+  stopifnot(all(file.exists(required_cao_paths(id))))
+  src <- file.path("generated/assets", id, paste0(assets, ".md"))
+  stopifnot(all(file.exists(src)))
+  dest <- file.path(out, id)
+  dir.create(dest, showWarnings = FALSE)
+  stopifnot(all(file.copy(src, dest, overwrite = TRUE)))
+}
+writeLines(c("id: LU001", "title: Institutional Investment Ecosystem", "status: technical_package", "objects:", paste0("  - ", ids)), file.path(out, "manifest.yaml"))
+message("LU001 technical package built")
